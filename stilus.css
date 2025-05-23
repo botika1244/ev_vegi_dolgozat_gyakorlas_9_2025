@@ -25,3 +25,83 @@ nav a {
 nav a:hover {
     background-color: #047857;
 }
+
+h1 {
+    text-align: center;
+    background-color: rgb(29, 248, 0);
+    color: white;
+    padding: 1.5em;
+    margin-bottom: 2em;
+    font-size: 3em;
+}
+
+article {
+    max-width: 900px;
+    margin: auto;
+    padding-left: 1em;
+    padding-right: 1em;
+}
+
+section {
+    background-color: #e6fef1;
+    border-left: solid 4px #10b981;
+    padding: 10px;
+    margin-bottom: 2em;
+    border-radius: 5px;
+    box-shadow: 0 0 15px rgba(16, 185, 129, 0.1);
+}
+
+footer {
+    color: white;
+    background-color: #059669;
+    text-decoration: none;
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.szoveg {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+}
+
+.szoveg li {
+    margin-bottom: 1em;
+    text-align: justify;
+}
+
+.szoveg img {
+    width: 100%;
+    border-radius: 5px;
+    margin-top: 1rem;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    color: #065f46;
+    margin-top: none;
+    font-size: 1.8rem;
+}
+
+@media screen and (max-width: 600px){
+    body {
+        font-size: 25px;
+        width: 100%;
+    }
+    nav {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 5px;
+        text-align: center;
+    }
+    .szoveg{
+        grid-template-columns: 1fr;
+    }
+    h1{
+        font-size: 2em;
+    }
+}
